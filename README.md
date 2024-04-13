@@ -114,7 +114,7 @@ What You'll Learn:
 1. Creating an [Interface](https://docs.soliditylang.org/en/v0.8.19/contracts.html#interfaces) for `IFrog` and `IJumper`
 
    ```solidity
-      // SPDX-License-Identifier: MIT
+   // SPDX-License-Identifier: MIT
    pragma solidity 0.8.19;
    
    interface IFrog {
@@ -130,8 +130,8 @@ What You'll Learn:
        string public name;
        uint256 public jumps;
    
-       constructor(string memory name_) {
-           name = name_;
+       constructor(string memory _name) {
+           name = _name;
        }
    
        function jump() public {
@@ -162,8 +162,8 @@ What You'll Learn:
        uint256 public jumps;
        uint256 public constant PRICE = 1 ether;
    
-       constructor(string memory name_) {
-           name = name_;
+       constructor(string memory _name) {
+           name = _name;
        }
    
        function jump() public payable {
@@ -345,14 +345,21 @@ v20.11.1
    export default deployFrogJump;
    ```
 
-3. Deploy the contract and interact with it in the frontend using the `debugger` page
+3. Change the `version` settings for the `solidity` compiler in the `hardhat.config.ts` to be `0.8.19` (line `24`)
+
+   - You can find this file in the `packages/hardhat` directory
+
+4. Deploy the `FrogJump` contract and interact with it in the frontend using the `debugger` page
 
 ### Building a dApp with ScaffoldETH-2
 
 1. Visit [Speedrun Ethereum](https://speedrunethereum.com/)
 2. Follow the [Challenge #0: 🎟 Simple NFT Example](https://speedrunethereum.com/challenge/simple-nft-example)
-3. Modify the `nftsMetadata.ts` file under `packages/nextjs/utils/simpleNFT` with the file in this repository
+3. Replace the `nftsMetadata.ts` file under `packages/nextjs/utils/simpleNFT` with the [file in this repository](./nftsMetadata.ts)
+   - Credits to the [Efrogs](https://linktr.ee/efrogs) maintainers for the NFT Collection and [Element](https://element.market/collections/ethereum-frogs) Market for hosting the images
+   - You may want to edit the `NFTCard.tsx` component under `packages/nextjs/components/simpleNFT` folder to display the frog images correctly
+     - For example, you can change the `className` of the `NFT Image` to display a squared box by using `className="h-60 w-60"` (read more about this in the [Tailwind docs](https://tailwindcss.com/docs/width))
 4. Complete the challenge and deploy your dApp to Linea Sepolia testnet
 5. Verify your contract
-6. View your collection in [Testnet Opensea](https://testnets.opensea.io/)
+6. View your collection in [Testnets Opensea](https://testnets.opensea.io/)
 7. (Optional) Deploy your dApp to a hosting service like Vercel or similar
