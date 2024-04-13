@@ -192,6 +192,7 @@ What You'll Learn:
    - Make sure you have some testnet tokens in your wallet
    - Confirm the transactions on your wallet when prompted
 4. You can view the status of your transaction on the [Linea Sepolia Explorer](https://sepolia.lineascan.build/)
+   - Example [PayFrogJump](https://sepolia.lineascan.build/address/0x96D29A1160f2c4BD80118AB17E0636d8D7F65471) named `Crazy Frog`
 
 ### Using Tokens
 
