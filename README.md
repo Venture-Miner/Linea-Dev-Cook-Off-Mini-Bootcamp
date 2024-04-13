@@ -2,7 +2,11 @@
 
 Material for the Linea Dev Cook-Off Mini-Bootcamp
 
+Join our Academy [Telegram Group](https://t.me/vmineracademy) to participate in our future workshops and bootcamps.
+
 ## Part 1: Smart Contract Basics
+
+[![Smart Contract Basics](https://img.youtube.com/vi/lBHHh7HimfA/0.jpg)](https://www.youtube.com/watch?v=lBHHh7HimfA)
 
 Kickstart your blockchain journey with our Linea Dev Cook-Off series!
 
@@ -226,6 +230,8 @@ What You'll Learn:
 
 ## Part 2: Build an E2E Dapp with ScaffoldETH
 
+[![Build an E2E Dapp with ScaffoldETH](https://img.youtube.com/vi/yNo87FGwXJM/0.jpg)](https://www.youtube.com/watch?v=yNo87FGwXJM)
+
 Unlock the potential of dApp development for the Linea Dev Cook-Off with Scaffold ETH!
 
 This tutorial covers everything from blockchain interaction and Linea integration to deploying smart contracts and crafting user interfaces.
@@ -347,5 +353,5 @@ v20.11.1
 3. Modify the `nftsMetadata.ts` file under `packages/nextjs/utils/simpleNFT` with the file in this repository
 4. Complete the challenge and deploy your dApp to Linea Sepolia testnet
 5. Verify your contract
-6. View your collection in [Testnets Opensea](https://testnets.opensea.io/)
+6. View your collection in [Testnet Opensea](https://testnets.opensea.io/)
 7. (Optional) Deploy your dApp to a hosting service like Vercel or similar
